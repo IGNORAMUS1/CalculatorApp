@@ -1,0 +1,81 @@
+* {
+    font-family: 'orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calculator {
+    width: 375px;
+    height: 667px;
+    background-color: #141518;
+    padding: 52px 20px 24px;
+    border-radius: 24px;
+    color: #fff;
+}
+
+.calculator-display {
+    display: block;
+    border: 2px solid #1565C0;
+    height: 143px;
+    line-height: 56px;
+    padding: 12px;
+}
+
+.calculator-display p {
+    font-size: 48px;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 67px;
+    gap: 16px;
+}
+
+.input-key {
+    text-align: center;
+    line-height: 66px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+}
+
+.input-key.operator {
+    border: 1px solid #fff;
+}
+
+.input-key.clear {
+    background-color: #ddd;
+    grid-column: 1 / span 2;
+    border: none;
+}
+
+.input-key.equal {
+    text-align: center;
+    line-height: 66px;
+    background-color: #1565C0;
+    grid-column: 3 / span 2;
+    border: none;
+}
+
+.input-key:hover {
+    border-color: #ccc;
+}
+
+.input-key.equal:hover {
+    border-color: none;
+    background-color: #0a5ebe;
+}
+
+.input-key.clear:hover {
+    background-color: #ccc;
+}
