@@ -13,31 +13,31 @@
 
     <div class="calculator">
         <div class="calculator-display">
-            <p id="input-screen">o</p>
-            <p id="result">_</p>
+            <p id="input-screen">0</p>
+            <p id="result" style="float: right;"></p>
         </div>
         <div class="calculator-keys">
-            <div class="input-key clear">ac</div>
-            <div class="input-key">del</div>
-            <div class="input-key operator">/</div>
-            <div class="input-key">7</div>
-            <div class="input-key">8</div>
-            <div class="input-key">9</div>
-            <div class="input-key operator">X</div>
-            <div class="input-key">4</div>
-            <div class="input-key">5</div>
-            <div class="input-key">6</div>
-            <div class="input-key operator">-</div>
-            <div class="input-key">3</div>
-            <div class="input-key">2</div>
-            <div class="input-key">1</div>
-            <div class="input-key operator">+</div>
-            <div class="input-key zero">0</div>
-            <div class="input-key">.</div>
-            <div class="input-key equal">=</div>
+            <button class="input-key clear" onclick="deleteAndClear('clear')">ac</button>
+            <button class="input-key" onclick="deleteAndClear('delete')">del</button>
+            <button class="input-key operator" onclick="inputOperator('/')">/</button>
+            <button class="input-key" onclick="inputKey('7')">7</button>
+            <button class="input-key" onclick="inputKey('8')">8</button>
+            <button class="input-key" onclick="inputKey('9')">9</button>
+            <button class="input-key operator" onclick="inputOperator('*')">X</button>
+            <button class="input-key" onclick="inputKey('4')">4</button>
+            <button class="input-key" onclick="inputKey('5')">5</button>
+            <button class="input-key" onclick="inputKey('6')">6</button>
+            <button class="input-key operator" onclick="inputOperator('-')">-</button>
+            <button class="input-key" onclick="inputKey('3')">3</button>
+            <button class="input-key" onclick="inputKey('2')">2</button>
+            <button class="input-key" onclick="inputKey('1')">1</button>
+            <button class="input-key operator" onclick="inputOperator('+')">+</button>
+            <button class="input-key zero" onclick="inputKey('0')">0</button>
+            <button class="input-key" onclick="inputKey('.')">.</button>
+            <button class="input-key equal" onclick="equalTo()">=</button>
         </div>
     </div>
 
-    <script href="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
