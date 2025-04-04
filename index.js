@@ -4,6 +4,8 @@ let result = 0;
 let inputScreenDisplay = document.getElementById('input-screen');
 let displayResult = document.getElementById('result');
 
+
+// function to display inputs on screen
 function inputKey(x) {
     if ( inputScreen == "0" || result != 0) {
         inputScreen = x
@@ -16,6 +18,8 @@ function inputKey(x) {
     }
 }
 
+
+// function to add operators
 function inputOperator(x) {
     if (inputScreen == "0" & (x == "+" || x == "-")) {
         inputScreen = x;
@@ -31,6 +35,8 @@ function inputOperator(x) {
     }
 }
 
+
+// function to clear and delete input display
 function deleteAndClear(x) {
     if (x == "delete" & inputScreen.length == 1 & inputScreen != "0") {
         inputScreen = "0";
@@ -46,6 +52,8 @@ function deleteAndClear(x) {
     }
 }
 
+
+// function to compute the display expression
 function equalTo() {
     if (inputScreen == "0") {
         inputScreenDisplay.innerHTML = inputScreen;
